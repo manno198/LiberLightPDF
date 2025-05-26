@@ -32,6 +32,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ["pdfjs-dist/build/pdf.worker.min.mjs"], // Ensure worker is pre-bundled
+    include: ["pdfjs-dist/build/pdf.worker.min.js"], // Updated to use .js instead of .mjs
   },
 });
