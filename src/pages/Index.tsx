@@ -244,6 +244,8 @@ const Index = () => {
       {/* Footer for "Developed by" text */}
       <footer className={`fixed bottom-0 left-0 right-0 h-8 bg-black text-white flex items-center justify-center text-sm`}>
         <span>Developed by Harshita Singh</span>
+        <span className="ml-4">|</span>
+        <span className="ml-4">This is a web version of a Chrome extension</span>
       </footer>
 
       {/* Duck component for motivation */}
