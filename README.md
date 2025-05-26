@@ -56,4 +56,4 @@ We welcome contributions! To contribute:
 
 Happy to collaborate and review your ideas, improvements, and fixes!
 
-
+With ❤️ by Harshita Singh
