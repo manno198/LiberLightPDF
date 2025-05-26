@@ -37,7 +37,7 @@ LiberLightPDF is a modern, feature-rich PDF editor and viewer built with React a
 ```sh
 # Clone the repository
 git clone <YOUR_GIT_URL>
-cd ducky-pdf-editor-magic-main
+
 
 # Install dependencies
 npm install
@@ -45,8 +45,6 @@ npm install
 # Start the development server
 npm run dev
 ```
-
-The app will be available at [http://localhost:8080](http://localhost:8080) by default.
 
 ## Contributing
 We welcome contributions! To contribute:
@@ -58,5 +56,4 @@ We welcome contributions! To contribute:
 
 Happy to collaborate and review your ideas, improvements, and fixes!
 
-## License
-This project is open source and available under the [MIT License](LICENSE).
+
