@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import DuckSettings from "@/components/DuckSettings";
 import PDFViewer from "@/components/PDFViewer";
 import EditorToolbar from "@/components/EditorToolbar";
-import { ArrowLeft, ArrowRight, ZoomIn, ZoomOut, Maximize2, Minimize2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, ZoomIn, ZoomOut, Maximize2, Minimize2, Github, Linkedin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import WelcomeScreen from "@/components/WelcomeScreen";
 import Duck from "@/components/Duck";
@@ -84,6 +84,12 @@ const Index = () => {
         </h1>
         
         <div className="flex items-center space-x-2">
+          <a href="https://github.com/manno198" target="_blank" rel="noopener noreferrer" className={`px-3 py-1 h-9 flex items-center justify-center ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-100'}`} aria-label="GitHub Profile">
+            <Github className="h-4 w-4" />
+          </a>
+          <a href="https://www.linkedin.com/in/harshita-singh-ba0771274/" target="_blank" rel="noopener noreferrer" className={`px-3 py-1 h-9 flex items-center justify-center ${darkMode ? 'text-white hover:bg-gray-700' : 'text-gray-900 hover:bg-gray-100'}`} aria-label="LinkedIn Profile">
+            <Linkedin className="h-4 w-4" />
+          </a>
           {!fullScreen && (
             <Button 
               variant="outline"
@@ -235,6 +241,11 @@ const Index = () => {
         )}
       </main>
       
+      {/* Footer for "Developed by" text */}
+      <footer className={`fixed bottom-0 left-0 right-0 h-8 bg-black text-white flex items-center justify-center text-sm`}>
+        <span>Developed by Harshita Singh</span>
+      </footer>
+
       {/* Duck component for motivation */}
       <Duck
         interval={duckInterval}
