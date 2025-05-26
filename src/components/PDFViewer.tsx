@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import * as pdfjsLib from "pdfjs-dist";
 import jsPDF from "jspdf";
 //import pdfjsWorker from "G:/Projekt/ducky pdf/node_modules/pdfjs-dist/build/pdf.worker.min.mjs"; // Use .mjs instead of .js
+import pdfjsWorkerURL from "pdfjs-dist/build/pdf.worker.min.mjs?url"; // Import worker using url suffix for Vite
 
 // Set the worker source
-pdfjsLib.GlobalWorkerOptions.workerSrc = "pdf.worker.min.js"; // Use the UMD worker for Chrome extension compatibility
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorkerURL; // Use the imported URL
 
 interface PDFViewerProps {
   darkMode: boolean;
