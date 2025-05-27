@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import * as pdfjsLib from "pdfjs-dist";
 import jsPDF from "jspdf";
-// Import worker using the correct file name
-import pdfjsWorker from "pdfjs-dist/build/pdf.worker.min.js";
 
 // Set the worker source
-pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 interface PDFViewerProps {
   darkMode: boolean;
