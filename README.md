@@ -3,6 +3,7 @@
 ## Project Overview
 LiberLightPDF is a modern, feature-rich PDF editor and viewer built with React and TypeScript. It allows you to view, annotate, draw, highlight, erase, take per-page notes, and export your edited PDFs with all your changes and notes included. The app also features a motivational duck to keep you inspired while you work!
 
+Check the demo at : [https://liberlightpdfeditor.netlify.app/]
 ## Tech Stack
 - **React 18**
 - **TypeScript**
