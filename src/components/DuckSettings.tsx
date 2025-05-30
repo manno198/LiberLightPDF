@@ -132,7 +132,7 @@ const DuckSettings: React.FC<DuckSettingsProps> = ({
                   value={customMessages}
                   onChange={(e) => setCustomMessages(e.target.value)}
                   rows={6}
-                  className="dark:text-white dark:bg-gray-800 dark:border-gray-600"
+                  className="dark:text-white dark:bg-gray-800 dark:border-gray-600 bg-white text-gray-900 border-gray-300"
                 />
                 <div className="text-xs text-muted-foreground">
                   Enter one message per line. Leave empty to use default messages.

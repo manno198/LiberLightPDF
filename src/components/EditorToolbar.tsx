@@ -234,11 +234,15 @@ const EditorToolbar: React.FC<EditorToolbarProps> = ({
         {activeTool === "eraser" && (
           <Popover>
             <PopoverTrigger asChild>
-              <Button variant="outline" size="sm">
-                <Eraser className="h-4 w-4 mr-1" /> Eraser Options
+              <Button 
+                variant={darkMode ? 'secondary' : 'outline'}
+                size="sm"
+                className={`flex items-center gap-2 ${darkMode ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600' : ''}`}
+              >
+                <Eraser className="h-4 w-4 mr-1" /> <span>Eraser Options</span>
               </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-60">
+            <PopoverContent className={`w-60 ${darkMode ? 'bg-gray-800 text-white' : ''}`} >
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <Label>Size: {eraserSize}px</Label>
